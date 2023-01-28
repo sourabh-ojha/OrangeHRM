@@ -20,7 +20,7 @@ public class Demopage {
 
 		String data[][] = null;
 
-		String excelpath = "C:\\Users\\HP\\Documents\\Orangehrmtesting.xls";
+		String excelpath = "Orangehrmtesting.xls";
 
 		FileInputStream fis = new FileInputStream(excelpath);
 
@@ -52,7 +52,7 @@ public class Demopage {
 		}
 
 		Demopage obj = new Demopage();
-		for (int i = 11; i < data.length; i++) {
+		for (int i = 0; i < data.length; i++) {
 			obj.contactsales(data[i][0], data[i][1], data[i][2], data[i][3], data[i][4]);
 		}
 
